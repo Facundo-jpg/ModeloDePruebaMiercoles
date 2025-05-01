@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --bg-primario-gradient: linear-gradient(to top, rgba(150,99,255,1), rgba(240, 236, 247, 0.897));
+    --bg-primario: #9663ff;
+    --bg-secundario: #884efd;
+    --txt-primario: #000000;
+    --sombra-Chica: 0px 0px 5px rgb(0, 0, 0, 0.5);
+    --sombra-Grande: 0px 0px 20px rgb(255, 255, 255, 0.5);
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    overflow: repeat none;
+    place-items: center;
+    background: var(--bg-primario-gradient);
+    color: rgb(255, 255, 255);
+}
+
+.header{
+    height: 30%;
+}
+
+.bienvenida{
+    display: flex;
+    flex-direction: column;;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;  color: black;
+}
+
+.logo{
+    margin: auto;
+    height: 80px;
+    width: 80px;
+    mix-blend-mode: multiply;
+}
+
+.logoBienvenida{
+    margin: auto;
+    height: 20vh;
+    width: 80vw;
+    filter: drop-shadow(var(--sombra-Grande));
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    padding: 0px 5px 0px 5px;
+    gap: 5px;
+}
+
+.login input[type="email"], [type="password"]{
+    width: 100%;
+    height: 2.4em;
+    padding: 1em;
+    border-radius: 5em;
+    border: none;;
+}
+
+.login .boton{
+    width: 100%;
+    height: 2.4em;
+    background-color: var(--bg-secundario);
+    border-radius: .25em;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    line-height: 2.4em;
+}
